@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="EVILLYN Galaxy - Uma experiência cósmica interativa">
     <title>EVILLYN Galaxy</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,9 +16,9 @@
     <div id="intro" class="screen active">
         <div class="stars-bg"></div>
         <div class="content">
-            <h1 id="name">EVILLYN</h1>
-            <p id="message">Welcome to the Galaxy ❤️</p>
-            <button id="startBtn" class="btn">Enter</button>
+            <h1 id="name" class="glowing-text">EVILLYN</h1>
+            <p id="message" class="fade-in-text">Welcome to the Galaxy ❤️</p>
+            <button id="startBtn" class="btn btn-primary">Enter</button>
         </div>
     </div>
 
@@ -24,17 +26,23 @@
     <div id="overlay" class="screen">
         <div class="stars-bg"></div>
         <div class="content">
-            <h2>Welcome to EVILLYN's World</h2>
-            <p>Explore the cosmic experience</p>
-            <button id="backBtn" class="btn">Back</button>
+            <h2 class="glowing-text">Welcome to EVILLYN's World</h2>
+            <p class="fade-in-text">Explore the cosmic experience</p>
+            <button id="backBtn" class="btn btn-secondary">Back</button>
         </div>
     </div>
 
     <!-- Music Control -->
-    <audio id="music" loop>
-        <source src="your-music-file.mp3" type="audio/mpeg">
+    <audio id="music" preload="none">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
     </audio>
-    <button id="musicBtn" class="music-btn">🔊</button>
+    <button id="musicBtn" class="music-btn" title="Toggle Music">🔊</button>
+
+    <!-- Footer Info -->
+    <div class="footer-info">
+        <p>Made with ❤️ by EVILLYN</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
